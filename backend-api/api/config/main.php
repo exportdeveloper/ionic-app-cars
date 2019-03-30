@@ -75,6 +75,7 @@ return [
 
                         'POST register'                =>  'register',  //+
                         'OPTIONS register'             =>  'options',   //+
+
                     ],
 
                 ],

@@ -48,7 +48,6 @@ class UserController extends ActiveController{
         ];
 
 
-
         return $behaviors;
     }
 
