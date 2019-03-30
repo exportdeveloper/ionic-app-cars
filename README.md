@@ -1,13 +1,13 @@
 # ionic-app-cars
 hybrid application for basic learning<br>
-This application is for education, this app Using api developed by php wwith Yii 2.0 framework.
+This application is for education, this app Using api developed by php with Yii 2.0 framework.
 <h2>Dependencies:</h2>
 <ul>
   <li>nodeJs</li> 
   <li>Java Development Kit</li> 
   <li>ionic framework</li> 
   <li>Apache Serve</li> 
-  <li>Android Sdk [optimal]for building</li> 
+  <li>Android Sdk for building [optimal]</li> 
  </ul>
   
 <h2>Tutorials</h2>
