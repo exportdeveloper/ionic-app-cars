@@ -16,6 +16,7 @@ Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
 <h2>Download</h2>
 1.Clone the ionic project & api project<br/>
 2.run apache & import the database from  <code>data</code> folder<br/>
+3.you need install php-jwt on backend project <code>composer require firebase/php-jwt</code><br/>
 3.initialize ionic project<br/>
 4.serve the project <code>ionic serve</code><br/>
 
