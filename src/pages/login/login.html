@@ -1,0 +1,49 @@
+<ion-header >
+  <div class="main-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Login</strong> session
+    </ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button tappable (click)="homePage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+</ion-navbar>
+   
+</div>
+</ion-header>
+
+<ion-content>
+
+  <div class="logo-box">
+      <img src="../assets/icon/favicon.ico">
+  </div>
+
+  <div class="errors" *ngIf='errorMessage'>{{ errorMessage }}</div>
+    <form [formGroup]="_loginForm" (ngSubmit)="onSubmit(_loginForm.value)">
+  <div id="error"></div>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [formControl]="_loginForm.controls['username']"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"  [formControl]="_loginForm.controls['password']"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="buttons-page">
+      <button ion-button type="submit" [disabled]="!_loginForm.valid ">Login</button> or
+      <button ion-button type="button" (click)="registerPage()">Register</button>
+  </div>
+
+</form>
+
+</ion-content>
+

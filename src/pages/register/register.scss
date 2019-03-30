@@ -1,0 +1,25 @@
+page-register {
+
+        ion-content{
+
+            background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+            background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+            background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+            background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+
+            ion-item{
+                background: transparent !important;
+             }
+            ion-label{
+                color: #000 !important;
+             }
+            ion-icon{
+                font-size: 75px;
+                margin-top: 10%;
+                color: #cab954;
+            }
+
+        }
+
+}
+    

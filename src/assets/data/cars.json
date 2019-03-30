@@ -1,0 +1,32 @@
+[
+      {
+        "id":1,
+        "image":"assets/images/image1.jpg",
+        "reference":"IBIZA",
+        "brand":"Seat",
+        "price": 320
+       },
+       {
+        "id":2,
+        "image":"assets/images/image2.jpg",
+        "reference":"Sandero",
+        "brand":"Dacia",
+        "price": 280
+
+       },
+       {
+        "id":3,
+        "image":"assets/images/image3.jpg",
+        "reference":"Symbol",
+        "brand":"Renault",
+        "price": 270
+
+       },
+       {
+        "id":4,
+        "image":"assets/images/image4.jpg",
+        "reference":"307",
+        "brand":"Peugeot",
+        "price": 180
+       }
+    ]

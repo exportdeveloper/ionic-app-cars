@@ -1,0 +1,67 @@
+<ion-header >
+  <div class="main-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Register</strong> Account
+    </ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button tappable (click)="homePage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+</ion-navbar>
+</div>
+</ion-header>
+
+<ion-content>
+
+  
+  <form [formGroup]="_registerForm" (ngSubmit)="onSubmit(_registerForm.value)">
+      
+    <ion-row>
+          <ion-col text-center>
+              <ion-icon name="person"></ion-icon>
+            </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="errorFields">  <!-- شرط توفر الخطأ -->
+      <ion-col [innerHTML]="errorFields" style="color: #a91010;font-weight: 700;"></ion-col>
+    </ion-row>
+
+
+<ion-list>
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [formControl]="_registerForm.controls['username']"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+      <ion-label floating>Lastname</ion-label>
+      <ion-input type="text" [formControl]="_registerForm.controls['lastname']"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Firstname</ion-label>
+        <ion-input type="text" [formControl]="_registerForm.controls['firstname']"></ion-input>
+   </ion-item>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [formControl]="_registerForm.controls['email']"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"  [formControl]="_registerForm.controls['password']"></ion-input>
+  </ion-item>
+</ion-list>
+<button ion-button type="submit" [disabled]="!_registerForm.valid">Register</button> or
+<button ion-button type="button" (click)='loginPage()'>Login</button>
+</form>
+
+</ion-content>
+

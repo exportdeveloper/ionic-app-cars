@@ -1,0 +1,192 @@
+  // http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+
+
+/*تعريف ملف الخط*/
+@font-face {
+  src: local('Charm Regular'), local('Charm-Regular'), url("../assets/fonts/charm/Charm-Regular.ttf") format('TrueType') ;
+  font-family: 'Charm';
+}
+
+$font-family-base: 'Charm', cursive !important;
+$font-family-ios-base:'Charm', cursive !important;
+$font-family-md-base: 'Charm', cursive !important;
+$font-family-wp-base: 'Charm', cursive !important;
+
+
+/*تنسيق رأس الصفحة*/
+  ion-header{ 
+    .toolbar-background {
+     background: transparent;
+    }
+  
+    .toolbar-title{
+      font-size: 24px;
+    }
+
+    .main-header {
+      background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+      background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+      background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+      background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+      font-family: $font-family-base ;
+    }
+
+    div{
+        color:white !important;
+    }
+    button{
+        color:white !important;
+    }
+
+  .searchbar-input {
+      border-radius: 0 ;
+    }
+}
+
+ 
+
+
+
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+    font-family: $font-family-base ;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.65) ;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .full-width {
+    width: 100% !important;
+  }
+  
+}
+
+
+
+
+
+
+// Animate CSS
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
+
+
+
+ion-menu{
+   // رأس القائمة
+    ion-header{
+          h2{
+            margin-top: 5px;
+          }
+          h2,div{
+            font-family: $font-family-base;
+            color: #000 !important;
+          }
+      }
+
+      // محتويات القائمة
+      ion-content{
+        background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        font-family: $font-family-base ;
+      }
+      .item {
+        background-color: transparent;
+      }
+
+      .list .item-block .item-inner {
+        border-bottom: 1px solid #cbcba8;
+    }
+ }
+
+
+ ion-alert{
+  .alert-wrapper{
+    background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+    background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+    background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+    background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+    font-family: $font-family-base ;
+  }
+  .alert-button{
+    color: #000000 !important;
+  }
+
+  .alert-input {
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+  }
+
+ }
+
+ ion-item:last-child {
+  border-bottom: none !important;;
+}
+
+ ion-item{
+  background-color: transparent !important;
+  padding-right: 16px !important;;
+  .item-inner {
+      border-bottom: 1px solid #a6b46b !important;
+  }
+
+}
+

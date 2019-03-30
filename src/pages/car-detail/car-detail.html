@@ -1,0 +1,91 @@
+<ion-header>
+  <div class="main-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title *ngIf='car'>
+      <strong>{{ car.reference }}</strong> {{ car.brand }}
+    </ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button tappable (click)="account()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="cart($event)">
+          <ion-icon name="ios-cart"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+</div>
+</ion-header>
+ 
+<ion-content>
+  <ion-card *ngIf='car'>
+    <img [src]="car.image">
+  
+    <ion-card-content>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    <ion-row padding-top class="description">
+      <ion-col col-6>
+        <strong> Modele  </strong>
+      </ion-col>
+      <ion-col col-6>
+         {{ car.reference }} - {{ car.brand }}
+      </ion-col>
+      <ion-col col-6>
+        <strong> Engine  </strong>
+      </ion-col>
+      <ion-col col-6>
+        1.6 MPi 110 ch
+      </ion-col>
+
+      <ion-col col-6>
+        <strong>Energy</strong>
+      </ion-col>
+      <ion-col col-6>
+        Gasoline
+      </ion-col>
+
+      <ion-col col-6>
+        <strong>Power</strong>
+      </ion-col>
+      <ion-col col-6>
+        110 ch
+      </ion-col>
+      <ion-col col-6>
+        <strong>Displacement</strong>
+      </ion-col>
+      <ion-col col-6>
+        1598 cc
+      </ion-col>
+
+      <ion-col col-6>
+        <strong>Max speed</strong>
+      </ion-col>
+      <ion-col col-6>
+        Max speed
+      </ion-col>
+    </ion-row>
+  </ion-card-content>  
+  </ion-card>
+</ion-content>
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+    <ion-row  padding>
+      <ion-col>
+        <button color="primary" ion-button icon-left small full  menuClose>
+          <ion-icon name="flash" (click)="OrdersList()"></ion-icon>
+           Orders List
+        </button>
+      </ion-col>
+      <ion-col>
+        <button color="secondary"  ion-button icon-left small full menuClose (click)="addToCart(car)">
+          <ion-icon name="cart"></ion-icon>
+          Add to Cart
+        </button>
+      </ion-col>
+    </ion-row>
+    
+	</ion-toolbar>
+</ion-footer>

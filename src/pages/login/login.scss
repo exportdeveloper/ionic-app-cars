@@ -1,0 +1,38 @@
+page-login {
+
+    ion-content{
+        background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+
+        ion-item{
+            background: transparent !important;
+         }
+         
+        ion-label{
+            color: #000 !important;
+         }
+
+         .logo-box{
+                text-align: center;
+                padding-top:50px 
+         }
+         .buttons-page{
+            text-align:center;
+            padding-top: 20px;
+         }
+
+         .errors {
+            color: #18322e;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 13px;
+        }
+
+    }
+
+
+  
+}

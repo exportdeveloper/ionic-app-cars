@@ -1,0 +1,34 @@
+page-car-detail {
+    
+    ion-content{
+        background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+  
+    }
+     
+    ion-card{
+ 
+        .description {
+            ion-col {
+                color: #3c3c3c;
+                border: 1px solid #ababab;
+                margin-bottom: -1px;
+                margin-right: -1px;
+            }
+        }
+
+    }
+   
+
+}
+
+ion-footer{
+    .toolbar-background{
+        background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -moz-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: -o-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+        background: linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%) !important;
+    }
+}

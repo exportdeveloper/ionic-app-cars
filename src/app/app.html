@@ -1,0 +1,101 @@
+<ion-menu [content]="content"  id="guest-menu" > <!--القائمة التي ستظهر للزائر الدي لم يقم بالدخول  -->
+
+  <ion-header>
+    <ion-toolbar class="user-profile"> 
+      <ion-grid>
+        <ion-row>
+            <ion-col col-4>
+                <div class="logo-box">
+                  <img src="../assets/icon/favicon.ico">
+                </div>
+            </ion-col>
+
+          <ion-col padding-top col-8>
+            <h2 ion-text>Main Menu</h2>
+          </ion-col>
+        </ion-row>
+
+        <ion-row no-padding padding-top padding-bottom>  <!--حاوية الأزرار العلوية -->
+          <ion-col no-padding *ngFor="let page of guestButtons">
+            <button (click)="openPage(page)" [color]="page.color" ion-button icon-left small full  menuClose>
+              <ion-icon [name]="page.icon"></ion-icon>
+              {{ page.title }}
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+    <ion-list>
+
+      <button menuClose ion-item *ngFor="let page of pages" (click)="openPage(page)">
+          <ion-icon [name]="page.icon"></ion-icon> {{page.title}}
+      </button>
+     
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+
+
+
+<ion-menu [content]="content"  id="user-menu"><!--القائمة التي ستظهر للمستخدم الدي قام بتسجبل الدخول -->
+
+    <ion-header>
+      <ion-toolbar class="user-profile">
+        <ion-grid>
+          <ion-row>
+              <ion-col col-4>
+                  <div class="logo-box">
+                    <img src="../assets/icon/favicon.ico">
+                  </div>
+              </ion-col>
+  
+            <ion-col padding-top col-8>
+              <h2 ion-text>Main Menu</h2>
+            </ion-col>
+          </ion-row>
+  
+          <ion-row no-padding padding-top padding-bottom>
+              <ion-col no-padding *ngFor="let page of userButtons">
+                <button (click)="openPage(page)" [color]="page.color" ion-button icon-left small full  menuClose>
+                  <ion-icon [name]="page.icon"></ion-icon>
+                  {{ page.title }}
+                </button>
+              </ion-col>
+            </ion-row>
+  
+        </ion-grid>
+  
+      </ion-toolbar>
+    </ion-header>
+  
+  
+    
+  <ion-content>
+      <ion-list>
+          <!--البنود الاضافية التي ستظهر للمستخدم الدي قام بعمل تسجيل دخول-->
+          <button menuClose ion-item *ngFor="let page of accountPages" (click)="openPage(page)">
+              <ion-icon [name]="page.icon"></ion-icon> {{page.title}}
+          </button>
+          
+          <button menuClose ion-item *ngFor="let page of pages" (click)="openPage(page)">
+              <ion-icon [name]="page.icon"></ion-icon> {{page.title}}
+          </button>
+
+         
+
+      </ion-list>
+    </ion-content>
+
+  
+  </ion-menu>
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,48 @@
+<ion-header >
+  <div class="main-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>Location</strong> Auto
+    </ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button tappable (click)="login()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="cart($event)">
+          <ion-icon name="ios-cart"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+   <ion-toolbar padding>
+
+      <ion-searchbar
+        debounce="1000" 
+        [showCancelButton]="shouldShowCancel"
+        [(ngModel)]="searchQuery"
+        (ionInput)="onFilter($event)"
+      >
+
+    </ion-searchbar>
+    
+ </ion-toolbar>
+</div>
+</ion-header>
+
+	<ion-content  class="animated fadeIn common-bg">
+    <div class="card-background-page">
+        <div *ngIf='cars'>
+          <ion-card *ngFor="let car of cars" no-margin class="full-width">
+            <a (click)="detail(car.id)">
+                <img [src]="car.image" >
+                <div class="card-title">{{ car.reference}}</div>
+                <div class="card-subtitle">{{ car.brand }}</div>
+            </a>
+          </ion-card>
+        </div>
+   </div>
+</ion-content>

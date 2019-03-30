@@ -1,0 +1,58 @@
+<ion-header>
+  <div class="main-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>My</strong> Cart
+    </ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button tappable (click)="account()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="home($event)">
+          <ion-icon name="home"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+</div>
+</ion-header>
+
+
+ 
+<ion-content>
+  
+  <ion-list *ngIf='cart && cart?.length>0'>
+    <ion-item *ngFor='let car of cart ; let index=index'>
+           <ion-thumbnail item-start>
+              <img [src]="car.image">
+            </ion-thumbnail>
+            <h2>{{ car.reference }}</h2>
+            <p>{{ car.brand }} - <span style="color:green"> Quantity : {{ car.quantity }}</span></p>
+            <button ion-button clear item-end (click)='changeQuntatity(car,car.quantity)'>  <ion-icon name="create"></ion-icon></button>
+            <button ion-button clear item-end (click)='deleteItem(car.id)'>  <ion-icon name="trash"></ion-icon></button>
+           </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+    <ion-row  padding>
+      <ion-col>
+        <button color="primary" ion-button icon-left small full  menuClose>
+          <ion-icon name="home" (click)="home()"></ion-icon>
+           Go Home
+        </button>
+      </ion-col>
+      <ion-col>
+        <button color="secondary"  ion-button icon-left small full menuClose (click)="addToCart()">
+          <ion-icon name="hand"></ion-icon>
+          Confirm
+        </button>
+      </ion-col>
+    </ion-row>
+    
+	</ion-toolbar>
+</ion-footer>
