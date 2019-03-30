@@ -6,12 +6,12 @@ This application is for education, this app Using api developed by php with Yii 
   <li>nodeJs</li> 
   <li>Java Development Kit</li> 
   <li>ionic framework</li> 
-  <li>Apache Serve</li> 
+  <li>Apache Server</li> 
   <li>Android Sdk for building [optimal]</li> 
  </ul>
   
 <h2>Tutorials</h2>
-These are the lessons in Arabic language<br/>
+The lessons in Arabic language<br/>
 الدروس باللغة العربية <br/>
 Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
 <h2>Download and install</h2>
