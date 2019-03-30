@@ -2,11 +2,11 @@
 hybrid application for basic learning<br>
 This application is for education, this app Using api developed by php wwith Yii 2.0 framework.
 <h2>Dependencies:</h2>
--nodejs<br/>
--JDK<br/>
+-nodeJs<br/>
+-Java Development Kit <br/>
 -Android Sdk<br/>
 -ionic framework<br/>
--server apache<br/>
+-Apache Server<br/>
 <br/>
 
 <h2>Tutorials</h2>
