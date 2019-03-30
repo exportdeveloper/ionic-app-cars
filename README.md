@@ -9,7 +9,8 @@ hybrid application for basic learning
 <br/>
 
 <h2>Tutorial</h2>
-These are the lessons in Arabic language
+These are the lessons in Arabic language<br/>
+الدروس باللغة العربية <br/>
 Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
 <h2>Download</h2>
 1.Clone the release below<br/>
