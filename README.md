@@ -20,4 +20,4 @@ Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
 4.serve the project <code>ionic serve</code><br/>
 
 <h2>License</h2>
-elFinder is issued under a GPL license.
+this code is issued under a GPL license.
