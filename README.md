@@ -6,9 +6,8 @@ hybrid application for basic learning
 -Android Sdk<br/>
 -ionic framework<br/>
 <br/>
-<br/>
 
-<h2>Tutorial</h2>
+<h2>Tutorials</h2>
 These are the lessons in Arabic language<br/>
 الدروس باللغة العربية <br/>
 Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
