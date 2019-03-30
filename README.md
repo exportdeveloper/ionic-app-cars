@@ -2,13 +2,14 @@
 hybrid application for basic learning<br>
 This application is for education, this app Using api developed by php wwith Yii 2.0 framework.
 <h2>Dependencies:</h2>
--nodeJs<br/>
--Java Development Kit <br/>
--Android Sdk<br/>
--ionic framework<br/>
--Apache Server<br/>
-<br/>
-
+<ul>
+  <li>nodeJs</li> 
+  <li>Java Development Kit</li> 
+  <li>ionic framework</li> 
+  <li>Apache Serve</li> 
+  <li>Android Sdk [optimal]for building</li> 
+ </ul>
+  
 <h2>Tutorials</h2>
 These are the lessons in Arabic language<br/>
 الدروس باللغة العربية <br/>
