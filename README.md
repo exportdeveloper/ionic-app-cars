@@ -6,7 +6,7 @@ This application is for education, this app Using api developed by php built by 
   <li>nodeJs</li> 
   <li>Java Development Kit</li> 
   <li>ionic framework</li> 
-  <li>Apache Server</li> 
+  <li>Apache Server to run api</li> 
   <li>Android Sdk for building [optimal]</li> 
  </ul>
   
