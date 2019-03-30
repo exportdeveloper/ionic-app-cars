@@ -21,4 +21,4 @@ Follow Tutorials : https://exportdeveloper.com/tutorial/family/16/mobile
 4.serve the project <code>ionic serve</code><br/>
 
 <h2>License</h2>
-this code is issued under a MIT license.
+this code is issued under a GPL license.
